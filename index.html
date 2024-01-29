@@ -6,32 +6,70 @@
     <title>SweetFusion</title>
     <link rel="stylesheet" href="index.css">
 </head>
-    <body class="body">
-        <header>
-            <nav>
-                <div>
-                    <a href="index.html">
-                        <img src="https://res.cloudinary.com/dxhxsxijx/image/upload/v1706305666/SweetFusion/ehwtl55pihg6dgebbsyb.png" alt="D&M logo" class="img-logo">
-                    </a>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Customer support</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li><a href="home.html" target="mainframe">Home</a></li>
-                        <li class="submenu-parent">
-                            <a href="Project.html" target="mainframe">courses</a>
-                            <ul id="submenu">
-                                <li><a href="#">Decor</a></li>
-                                <li><a href="#">Baking</a></li>
-                                <li><a href="#">cakes</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html" target="mainframe">About sweetfusion</a></li>
-                        <li><a href="about.html" target="mainframe">Recipes</a></li>
-                        <li><a href="contact.html" target="mainframe">Contact us</a></li>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-whisk"></i>
+                    <h1 class="logo"><a href="/">Sweetfusion</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="/home.html" target="mainframe">HOME</a></li>
+                    <li class="submenu-parent"><a href="#">SHOP</a>
+                    <ul id="submenu">
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">pastry</a></li>
+                        <li><a href="#">Breadmaking</a></li>
+                        <li><a href="#">chocolate making</a></li>
                     </ul>
-                </div>
-              </nav>
-        </header>
-        <iframe class="index" src="home.html" title="mainframe" name="mainframe" frameborder="2"></iframe>
-    </body>
+                    </li>
+                    <li class="submenu-parent"><a href="#">COURSES</a>
+                    <ul id="submenu">
+                        <li><a href="#">Cake decoration</a></li>
+                        <li><a href="#">Cupcakes</a></li>
+                        <li><a href="#">bread baking</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">RECIPES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <iframe class="index" src="home.html" title="mainframe" name="mainframe" frameborder="2"></iframe>
+</body>
 </html>

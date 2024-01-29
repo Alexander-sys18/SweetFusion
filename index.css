@@ -1,131 +1,20 @@
-.body{
-   background: #ffe1f8;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0%;
-    padding:0%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--primary-color: #e8bdf5;
+	--background-color: #ede3f8;
+	--dark-color: #ec69d6;
 }
 
-
-
-header {
-position: fixed;
-width: 100%;
-height: 10%;
-background-color: white;
-top: 0;
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
 }
 
-nav {
-max-width: 1024px;
-margin:0 auto;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-font-size: 20px;
-}
-
-header img {
-padding: 18px 10px;
-}
-
-nav ul {
-float: right;
-list-style: none;
-text-align: center;
-margin: 0 10px;
-}
-
-nav li {
-list-style-type: none;
-display: inline;
-}
-
-nav li a {
-font-size: 1em;
-text-decoration: none;
-line-height: 70px;
-padding: 15px 10px;
-color: black;
-background-color: rgb(250, 208, 237);
-border: 1px solid black;
-}
-
-nav li a:hover {
-color: white;
-background-color: rgb(234, 152, 245);
-}
-
-.submenu-parent {
-position: relative;
-}
-
-.submenu-parent ul {
-display: none;
-position: absolute;
-top: 100%;
-left: 50%; 
-transform: translateX(-0%); 
-background-color: white;
-border: 1px solid grey;
-box-shadow: 0px 8px 16px black;
-z-index: 100;
-margin-top: 5px;
-}
-
-.submenu-parent ul {
-display: none;
-position: absolute;
-top: 100%;
-left: 50%;
-transform: translateX(-50%);
-background-color: white;
-border: 1px solid black;
-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-z-index: 100;
-margin-top: 5px;
-padding: 0; 
-width: 300%;
-}
-
-.submenu-parent:hover ul {
-display: block;
-}
-
-.submenu-parent ul li {
-display: block;
-margin: 0;
-padding: 0;
-text-align: center;
-}
-
-.submenu-parent ul li a[href="https://www.ejemplo.com"],
-.submenu-parent ul li a[href="no available"],
-.submenu-parent ul li a[href="no available"] {
-display: block;
-margin: 0; 
-padding: 10px;
-}
-
-.submenu-parent ul li a {
-font-size: 1em;
-text-decoration: none;
-line-height: 40px;
-background-color:white;
-border: none;
-transition: background-color 0.3s ease;
-}
-
-.submenu-parent ul li a:hover {
-color: white;
-background-color: rgb(234, 152, 245);
-}
-.img-logo {
-width: 110px;
-height: auto;
-justify-content: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 iframe.index{
@@ -133,14 +22,250 @@ iframe.index{
     height: 100vh;
 }
 
-body.bp{
-    margin-left: 20vw;
-  }
-
-  .section-3{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 100px;
-    font-size: 25px;
+/* ********************************** */
+/*             UTILIDADES             */
+/* ********************************** */
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
 }
+
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+.container-hero {
+	background-color: var(--background-color);
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.customer-support i {
+	font-size: 3.3rem;
+}
+
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.container-logo i {
+	font-size: 3rem;
+}
+
+.container-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.container-user {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.container-user .fa-user {
+	font-size: 3rem;
+	color: var(--primary-color);
+	padding-right: 2.5rem;
+	border-right: 1px solid #f780dd;
+}
+
+.container-user .fa-basket-shopping {
+	font-size: 3rem;
+	color: var(--primary-color);
+	padding-left: 1rem;
+}
+
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ************* NAVBAR ************* */
+.container-navbar {
+	background-color: var(--primary-color);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--dark-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+	opacity: 1;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+.search-form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #f35ada;
+	border-radius: 2rem;
+	background-color: #ffffff;
+	height: 4.4rem;
+	overflow: hidden;
+}
+
+.search-form input {
+	outline: none;
+	font-family: inherit;
+	border: none;
+	width: 25rem;
+	font-size: 1.4rem;
+	padding: 0 2rem;
+	color: #eb6fbb;
+	cursor: pointer;
+}
+
+.search-form input::-webkit-search-cancel-button {
+	appearance: none;
+}
+
+.search-form .btn-search {
+	border: none;
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 1rem;
+}
+
+.btn-search i {
+	font-size: 2rem;
+	color: #f556e8;
+}
+
+.submenu-parent {
+    position: relative;
+}
+
+.submenu-parent ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-0%); 
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: 0px 8px 16px black;
+    z-index: 100;
+    margin-top: 5px;
+}
+
+.submenu-parent ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-top: 5px;
+    padding: 0; 
+    width: 300%;
+}
+
+.submenu-parent:hover ul {
+    display: block;
+}
+
+.submenu-parent ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.submenu-parent ul li a[href="https://www.ejemplo.com"],
+.submenu-parent ul li a[href="no available"],
+.submenu-parent ul li a[href="no available"] {
+    display: block;
+    margin: 0; 
+    padding: 10px;
+}
+
+.submenu-parent ul li a {
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 40px;
+    background-color:white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.submenu-parent ul li a:hover {
+    color: white;
+    background-color: rgb(234, 152, 245);
+}
+
+
