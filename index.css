@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--primary-color: #e8bdf5;
-	--background-color: #ede3f8;
-	--dark-color: #ec69d6;
+	--primary-color:  #00999962;
+	--background-color: #8701b034;
+	--dark-color:#ff730063 ;
 }
 
 html {
@@ -12,14 +12,19 @@ html {
 }
 
 * {
-	margin: 0;
-	padding: 0;
+	margin: auto;
+	padding: auto;
 	box-sizing: border-box;
 }
 
 iframe.index{
     width: 100%;
     height: 100vh;
+}
+
+.body{
+	background-color: #8701b00a;
+
 }
 
 /* ********************************** */
@@ -34,6 +39,7 @@ iframe.index{
 	text-align: center;
 	font-weight: 500;
 	font-size: 3rem;
+	
 }
 
 /* ********************************** */
@@ -77,7 +83,7 @@ iframe.index{
 
 .container-logo h1 a {
 	text-decoration: none;
-	color: #000;
+	color: #ffffff;
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: -1px;
@@ -87,13 +93,15 @@ iframe.index{
 	display: flex;
 	gap: 1rem;
 	cursor: pointer;
+	color: #009999;
+
 }
 
 .container-user .fa-user {
 	font-size: 3rem;
 	color: var(--primary-color);
 	padding-right: 2.5rem;
-	border-right: 1px solid #f780dd;
+	border-right: 1px solid #009999;
 }
 
 .container-user .fa-basket-shopping {
@@ -126,6 +134,8 @@ iframe.index{
 .menu {
 	display: flex;
 	gap: 2rem;
+	width: 80%;
+	justify-content: space-between;
 }
 
 .menu li {
@@ -135,7 +145,7 @@ iframe.index{
 .menu a {
 	text-decoration: none;
 	font-size: 1.3rem;
-	color: var(--dark-color);
+	color: white;
 	font-weight: 600;
 	text-transform: uppercase;
 	position: relative;
@@ -145,7 +155,7 @@ iframe.index{
 	content: '';
 	width: 1.5rem;
 	height: 1px;
-	background-color: #fff;
+	background-color: #8601B0;
 	position: absolute;
 	bottom: -3px;
 	left: 50%;
@@ -162,47 +172,6 @@ iframe.index{
 	color: #fff;
 }
 
-.search-form {
-	position: relative;
-	display: flex;
-	align-items: center;
-	border: 2px solid #f35ada;
-	border-radius: 2rem;
-	background-color: #ffffff;
-	height: 4.4rem;
-	overflow: hidden;
-}
-
-.search-form input {
-	outline: none;
-	font-family: inherit;
-	border: none;
-	width: 25rem;
-	font-size: 1.4rem;
-	padding: 0 2rem;
-	color: #eb6fbb;
-	cursor: pointer;
-}
-
-.search-form input::-webkit-search-cancel-button {
-	appearance: none;
-}
-
-.search-form .btn-search {
-	border: none;
-	background-color: var(--primary-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	padding: 1rem;
-}
-
-.btn-search i {
-	font-size: 2rem;
-	color: #f556e8;
-}
-
 .submenu-parent {
     position: relative;
 }
@@ -215,7 +184,7 @@ iframe.index{
     transform: translateX(-0%); 
     background-color: white;
     border: 1px solid grey;
-    box-shadow: 0px 8px 16px black;
+    box-shadow: 0px 8px 16px #009999;
     z-index: 100;
     margin-top: 5px;
 }
@@ -226,9 +195,9 @@ iframe.index{
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #8701b06c;
+    border: 1px solid #009999;
+    box-shadow: 0px 8px 16px #009999;
     z-index: 100;
     margin-top: 5px;
     padding: 0; 
@@ -258,14 +227,113 @@ iframe.index{
     font-size: 1em;
     text-decoration: none;
     line-height: 40px;
-    background-color:white;
+    
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .submenu-parent ul li a:hover {
-    color: white;
-    background-color: rgb(234, 152, 245);
+    color: #8601B0;
+    background-color: white;
 }
 
 
+/*HOME*/
+.img{
+display: flex;
+justify-content: center;
+width: 10vw;
+height: 2vw;
+}
+
+
+
+
+/*SHOP*/
+
+/*COURSES*/
+
+/*RECIPES*/
+
+/*ABOUT US*/
+
+
+/*CONTACT*/
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    font-size: 25px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 25px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: #8701b05b;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #009999;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    font-size: 20px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+    font-size: 20px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #8701b034;
+    color: #009999;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 20px;
+}
+.container-form .btn-enviar:hover{
+    background: #00999948;
+    color: #8701b0ea;}
+	
+    
+    .maps{
+background-position: center;
+margin: 10cm;
+width: 10cm;
+height: 10cm;
+margin-bottom: 50px;
+margin-top:35px ;
+
+    }

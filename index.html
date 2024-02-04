@@ -6,12 +6,12 @@
     <title>SweetFusion</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="body">
     <header>
         <div class="container-hero">
             <div class="container hero">
                 <div class="customer-support">
-                    <i class="fa-solid fa-headset"></i>
+                    <i class="fa-solid fa-headset" style="color: #009999;"></i>
                     <div class="content-customer-support">
                         <span class="text">Customer support</span>
                         <span class="number">123-456-7890</span>
@@ -24,9 +24,9 @@
                 </div>
 
                 <div class="container-user">
-                    <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                    <div class="content-shopping-cart">
+                    <i class="fa-solid fa-user" style="color: #009999;"></i>
+                    <i class="fa-solid fa-basket-shopping" style="color: #009999;"></i>
+                    <div class="content-shopping-cart" style="color: #009999;">
                         <span class="text">Carrito</span>
                         <span class="number">(0)</span>
                     </div>
@@ -39,7 +39,7 @@
                 <i class="fa-solid fa-bars"></i>
                 <ul class="menu">
                     <li><a href="/home.html" target="mainframe">HOME</a></li>
-                    <li class="submenu-parent"><a href="#">SHOP</a>
+                    <li class="submenu-parent"><a href="/shop.html" target="mainframe">SHOP</a>
                     <ul id="submenu">
                         <li><a href="#">Cakes</a></li>
                         <li><a href="#">pastry</a></li>
@@ -55,20 +55,15 @@
                         <li><a href="#">Cookies</a></li>
                     </ul>
                 </li>
-                    <li><a href="#">RECIPES</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="/Recipes.html" target="mainframe">RECIPES</a></li>
+                    <li><a href="/about-us.html" target="mainframe">ABOUT US</a></li>
+                    <li><a href="/contact.html" target="mainframe">CONTACT</a></li>
                 </ul>
 
-                <form class="search-form">
-                    <input type="search" placeholder="Buscar..." />
-                    <button class="btn-search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
             </nav>
         </div>
     </header>
+    
     <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
     <iframe class="index" src="home.html" title="mainframe" name="mainframe" frameborder="2"></iframe>
 </body>
