@@ -519,62 +519,95 @@ iframe.index{
 /*RECIPES*/
 
 /*ABOUT US*/
-body {
-    font-family: 'Arial', sans-serif;
+
+body,
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
-    background-color: #d1e5e3; 
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-section {
-    padding: 50px 0;
-}
-
-h2 {
-    text-align: center;
-    color: #550677;
-    font-size: 2.5rem;
-    margin-bottom: 20px; /* Agrega espacio debajo del título */
-}
-
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about-text {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-}
-
-.about-text p {
-    font-size: 16px;
-    line-height: 1.6;
+/* Set a nice background color and font for the whole page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7ee7de;
     color: #333;
 }
 
+/* Center the content and give it some space */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the section header */
+.about-section h2 {
+    font-size: 2em;
+    color: #b625c9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the main text content */
+.about-text p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Style the images and the gallery */
 .about-image {
-    flex: 1;
+    text-align: center;
     margin-top: 20px;
 }
 
-.about-image img {
-    width: 100%;
-    max-width: 100%;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-wrapper {
+    margin: 10px;
+    overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Add some spacing between images in the gallery */
+.image-wrapper:not(:last-child) {
+    margin-right: 0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .about-section h2 {
+        font-size: 1.5em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .image-wrapper {
+        width: 100%;
+    }
+}
+
+
 /*CONTACT*/
 
 .container-form{
