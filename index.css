@@ -519,8 +519,59 @@ iframe.index{
 /*RECIPES*/
 
 /*ABOUT US*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1e5e3; 
+}
 
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
 
+.about-section {
+    padding: 50px 0;
+}
+
+h2 {
+    max-width: 100%;
+    text-align: center;
+    color: #550677;
+    font-size: 2.5rem; 
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-image {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 /*CONTACT*/
 
 .container-form{
