@@ -239,15 +239,14 @@ iframe.index{
 
 
 /*HOME*/
- .contaner-flui{
-    display:flex ;
-    flex-direction: row;
+.container-fluid {
+    display: flex;
 }
 
- .containe{
-    height: 100vh;
-    width: 50px;
- }
+.container-fluid img {
+    width: 50vw;
+    height:50vw;
+}
 
 /*SHOP*/
 
